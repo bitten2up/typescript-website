@@ -1,3 +1,7 @@
-"resolutions": {
-    "typescript": "4.7.2"
+{
+    "name": "bitten2up's typescript website",
+    "version": "1.0.0",
+    "resolutions": {
+        "typescript": "4.7.2"
+    }
 }
