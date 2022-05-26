@@ -21,12 +21,12 @@ jobs:
       run: yarn install
     - name: compile
       run: tsc src/index.ts
-    - name: Commit report
+    - name: github pages upload
       run: |
         git config --global user.name 'litten2up'
         git config --global user.email 'litten2up@users.noreply.github.com'
         mv src/*.js built/
         git add built/index.js
         git commit -am "push to gh-pages"
-        git push orgin/gh-pages
+        git push https://github.com/litten2up/typescript-website gh-pages
     
