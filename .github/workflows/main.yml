@@ -25,7 +25,8 @@ jobs:
       run: |
         git config --global user.name 'litten2up'
         git config --global user.email 'litten2up@users.noreply.github.com'
-        git commit -am "upload to gh-pages"
+        mv src/*.js built/
+        git add build/*
+        git commit -am "push to gh-pages"
         git push orgin/gh-pages
-      
     
