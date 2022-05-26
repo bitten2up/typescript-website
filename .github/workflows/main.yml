@@ -27,7 +27,7 @@ jobs:
         git config --global user.email 'litten2up@users.noreply.github.com'
         mv src/*.js built/
         git add built/index.js
-        git checkout gh-pages
+        git checkout -b gh-pages
         git commit -am "push to gh-pages"
         git push
     
