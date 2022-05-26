@@ -21,8 +21,6 @@ jobs:
       run: yarn install
     - name: compile
       run: tsc src/index.ts
-    - name: move the binaries
-      run: mkdir website/scripts; mv src/*.js website/scripts
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
       env:

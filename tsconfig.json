@@ -1,0 +1,12 @@
+
+{
+	"compilerOptions": {
+	   "outDir": "./website/scripts",
+	   "sourceMap": true,
+	   "strict": true
+	},
+    "files": {
+        "src/index.ts",
+        "src/canvas.ts"
+    }
+ }
