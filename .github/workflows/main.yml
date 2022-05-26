@@ -28,6 +28,7 @@ jobs:
         mv src/*.js built/
         git add built/index.js
         git checkout -b gh-pages
+        git push --set-upstream origin gh-pages
         git commit -am "push to gh-pages"
         git push
     
